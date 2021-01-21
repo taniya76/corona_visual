@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+    <title>Corona Map visualization</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #map {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='map'></div>
+
+
+</body>
+
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidGFuaXlhbWl0dGFsNzYiLCJhIjoiY2tkMXRvY3dqMTZ2cDJ5bXYyZW45ZTU4YyJ9.ZoLs8jdhiIfOD63eXPzyJg';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        zoom: 2
+    });
+  // create DOM element for the marker
+
+</script>
+
+<script src="index.js"></script>
+
+</html>
